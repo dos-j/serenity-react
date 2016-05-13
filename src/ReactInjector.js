@@ -1,5 +1,5 @@
 import {createElement, Component} from 'react';
-import serenity from './index';
+import serenity from 'serenitydi';
 
 function getPropsFromInjectables(injectables) {
 
