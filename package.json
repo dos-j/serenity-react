@@ -2,7 +2,7 @@
   "name": "serenity-react",
   "version": "0.0.1",
   "description": "A react Wrapper to allow for use with SerenityDI",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "compile": "babel -d lib/ src/",
     "prepublish": "npm run compile",
