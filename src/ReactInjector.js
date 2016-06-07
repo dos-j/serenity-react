@@ -4,7 +4,7 @@ import serenity from 'serenitydi';
 function getPropsFromInjectables(injectables) {
 
   const injectKeys = Object.keys(injectables);
-  const injectVals = serenity.fetch(injectKeys.map(key => injectables[key]));
+  const injectVals = serenity.fetchAll(injectKeys.map(key => injectables[key]));
 
   const newProps = injectVals.reduce((newProps, dep1, index) => {
     newProps[injectKeys[index]] = dep1;
